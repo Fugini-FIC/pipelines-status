@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status das Pipelines - Fugini</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, sans-serif;
+    max-width: 720px; margin: 40px auto; padding: 0 16px;
+    background: #0f1117; color: #e6e6e6;
+  }
+  h1 { font-size: 20px; margin-bottom: 4px; }
+  .sub { color: #9aa0a6; font-size: 13px; margin-bottom: 24px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #262a33; font-size: 14px; }
+  th { color: #9aa0a6; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+  .badge { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .badge.ok { background: #16321f; color: #4ade80; }
+  .badge.fail { background: #3a1616; color: #f87171; }
+  .badge.warn { background: #3a2f16; color: #facc15; }
+  .log { color: #7a828e; font-size: 12px; font-family: monospace; }
+  @media (prefers-color-scheme: light) {
+    body { background: #fff; color: #1a1a1a; }
+    th { color: #6b7280; }
+    td { border-bottom: 1px solid #e5e7eb; }
+    .log { color: #6b7280; }
+  }
+</style>
+</head>
+<body>
+  <h1>Status das Pipelines</h1>
+  <div class="sub">Atualizado em 22/08/2026 06:30</div>
+  <table>
+    <thead>
+      <tr><th>Pipeline</th><th>Status</th><th>Ultima execucao</th><th>Log</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mapa de Clientes - Sao Paulo</td>
+        <td><span class="badge ok">OK</span></td>
+        <td>22/08/2026  6:01:23,49</td>
+        <td class="log">C:\projetos\Projeto_23_Mapa_Clientes_Sao_Paulo\logs\pipeline_20260822_0600.log</td>
+      </tr>
+      <tr>
+        <td>Dash Recadastro</td>
+        <td><span class="badge ok">OK</span></td>
+        <td>22/08/2026  6:00:59,70</td>
+        <td class="log">C:\projetos\Projeto_18_Dash_Recadastro\logs\pipeline_20260822_0600.log</td>
+      </tr>
+      <tr>
+        <td>Mapa de Clientes - Sao Carlos</td>
+        <td><span class="badge ok">OK</span></td>
+        <td>22/08/2026  6:01:14,56</td>
+        <td class="log">C:\projetos\Projeto_19_Mapa_Clientes_Sao_Carlos\logs\pipeline_20260822_0600.log</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
